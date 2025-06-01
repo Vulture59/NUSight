@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #111;
+    color: white;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: auto;
+    background-color: #111;
+    overflow: hidden;
+  }
+  
+  header {
+    background-color: #111;
+    border-bottom: 1px solid #333;
+  }
+  
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    
+  }
+  
+  .topbar h1 {
+    margin: 0;
+    font-size: 1em;
+    color: #f03;
+    
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+  }
+  
+  .navbar a {
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .navbar a.active,
+  .navbar a:hover {
+    border-bottom: 2px solid #f03;
+    color: #f03;
+  }
+  
+  .filter {
+    padding: 20px;
+    border-bottom: 1px solid #333;
+  }
+  
+  .filter label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+  }
+  
+  .filter select {
+    margin-bottom: 12px;
+    width: 100%;
+    padding: 6px;
+    font-size: 1em;
+    background: #222;
+    color: white;
+    border: 1px solid #444;
+  }
+  
+  .tags {
+    margin-top: 10px;
+  }
+  
+  .tag {
+    display: inline-block;
+    padding: 6px 12px;
+    border: 1px solid #f03;
+    border-radius: 16px;
+    background-color: #111;
+    color: #f03;
+    margin: 6px 6px 0 0;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .tag.selected {
+    background-color: #f03;
+    color: white;
+  }
+  
+  .results {
+    padding: 20px;
+  }
+  
+  .spot {
+    display: flex;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .photo {
+    width: 100px;
+    background: #333;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .info {
+    padding: 10px;
+    flex: 1;
+  }
+  
+  .info h2 {
+    margin: 0;
+    font-size: 1.1em;
+    color: white;
+  }
+  
+  .info p {
+    margin: 6px 0;
+    font-size: 0.9em;
+    color: #ccc;
+  }
+  
+  .stars {
+    color: #ffcc00;
+    font-size: 1.2em;
+  }
+  
+  @media (max-width: 960px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      display: none;
+    }
+  
+    .navbar.show {
+      display: flex;
+    }
+  
+    .navbar a {
+      text-align: left;
+      padding: 14px;
+      border-top: 1px solid #333;
+    }
+  }
+
+  .dropdown {
+    position: relative;
+    margin-bottom: 20px;
+    user-select: none;
+  }
+  
+  .dropdown-toggle {
+    padding: 8px;
+    background: #222;
+    color: white;
+    border: 1px solid #444;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 180px;
+    overflow-y: auto;
+    background: #222;
+    border: 1px solid #444;
+    z-index: 1000;
+  }
+  
+  .dropdown-menu label {
+    display: block;
+    padding: 8px 10px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  .dropdown.open .dropdown-menu {
+    display: block;
+  }
+  
+  h1 button {
+    background: none;
+    border: none;
+    color: #f03;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .spot {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .spot:hover {
+    background-color: #2a2a2a;
+  }
+  

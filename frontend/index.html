@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NUSight</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="topbar">
+        <h1><button id="home-btn">NUSight</button></h1>
+        <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+      </div>
+      <nav class="navbar">
+        <a href="#find" class="active">Find & Filter</a>
+        <a href="#ratings">User Ratings</a>
+        <a href="#nearby">Nearby Spots</a>
+      </nav>
+    </header>
+
+    
+
+    <div class="filter">
+        <label>Time Range:</label>
+        <select id="start-time"></select> to <select id="end-time"></select>
+      
+        <label>Location:</label>
+        <div class="dropdown" id="location-dropdown">
+          <div class="dropdown-toggle">Select Faculties ▾</div>
+          <div class="dropdown-menu"></div>
+        </div>
+      
+        <label>Tags:</label>
+        <div class="tags"></div>
+    </div>
+
+    <section id="ratings" class="results">
+        <a href="spot.html?id=COM1_Level_2" class="spot" data-location="Computing" data-tags="Aircon,Quiet,Outlets">
+            <div class="photo">PHOTO</div>
+            <div class="info">
+                <h2>COM1 Level 2</h2>
+                <p>Computing, Open 24/7</p>
+                <div class="stars">⭐⭐⭐⭐☆ <span>(124)</span></div>
+            </div>
+        </a>
+  
+        <a href="spot.html?id=CLB_Study_Area" class="spot" data-location="Central Library" data-tags="Library,Quiet,Aircon">
+            <div class="photo">PHOTO</div>
+            <div class="info">
+                <h2>CLB Study Area</h2>
+                <p>Central Library, 8AM-10PM</p>
+                <div class="stars">⭐⭐⭐⭐⭐ <span>(238)</span></div>
+            </div>
+        </a>
+    </section>
+  
+    <section id="nearby" class="results">
+        <a href="spot.html?id=UTown_Plaza" class="spot" data-location="Town Green" data-tags="Cafeteria,Benches,Outlets">
+            <div class="photo">PHOTO</div>
+            <div class="info">
+                <h2>UTown Plaza</h2>
+                <p>Town Green, Near You</p>
+                <div class="stars">⭐⭐⭐⭐☆ <span>(85)</span></div>
+            </div>
+        </a>
+    </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
