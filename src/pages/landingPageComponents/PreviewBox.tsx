@@ -9,7 +9,7 @@ type StudySpot = {
 
 const PreviewBox = ({ studyspot }: { studyspot: StudySpot }) => {
   const rating = studyspot.Rating ?? 0;
-  const img = studyspot.Img ?? cherryImg; // Fallback image if none provided
+  const img = studyspot.Img ?? cherryImg;
   const fullStars = Math.round(rating);
 
   return (

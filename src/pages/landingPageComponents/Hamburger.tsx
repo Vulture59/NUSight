@@ -51,9 +51,12 @@ const HamburgerMenu = () => {
             <span>👥 About Us</span>
           </div>
 
-          {/* Add more menu items as needed */}
           <div className="menu-item" onClick={() => handleNavigation("/")}>
             <span>🏠 Home</span>
+          </div>
+
+          <div className="menu-item" onClick={() => handleNavigation("/login")}>
+            <span>👤 Log In/Register</span>
           </div>
         </div>
       </div>
