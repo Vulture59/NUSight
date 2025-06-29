@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
-import { db } from "../../firebase/firebase"; // Adjust path if needed
+import db from "../../firebase/firebase"; // Adjust path if needed
 import PreviewBox from "./PreviewBox";
 
 type StudySpot = {
