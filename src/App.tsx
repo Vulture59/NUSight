@@ -1,4 +1,4 @@
-import LandingPage from "./pages/LandingPage.tsx";
+import LandingPage from "./pages/HomePage.tsx";
 
 function App() {
   return (

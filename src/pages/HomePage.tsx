@@ -3,7 +3,7 @@ import "../styles/preview.css";
 import Hero from "./landingPageComponents/Hero.tsx";
 import Preview from "./landingPageComponents/Preview.tsx";
 
-const LandingPage = () => {
+const HomePage = () => {
   return (
     <>
       <Hero />
@@ -12,4 +12,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default HomePage;
